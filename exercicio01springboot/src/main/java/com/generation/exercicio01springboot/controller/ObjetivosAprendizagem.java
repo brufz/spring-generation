@@ -12,7 +12,7 @@ public class ObjetivosAprendizagem {
 	public String listarObjetivosAprendizagem() {
 		return "Os objetivos de aprendizagem da semana são: \n"
 				+ "Spring Boot - Aprendizado durante a aula e revisão \n"
-				+ "Finalizar vídeos de reforço sobre MySQL \n"
+				+ "Finalizar vídeos de reforço sobre MySQL \nz"
 				+ "Iniciar curso adicional de Spring Boot para revisão";
 	}
 }
