@@ -33,9 +33,10 @@ package com.generation.lojagames.controller;
 			return ResponseEntity.ok(repository.findAll());
 		}
 		
-		@GetMapping("/id")
+		@GetMapping("/{id}")
 		public ResponseEntity<CategoriaModel> getById(@PathVariable Long id){
-			return repository.findById(id).map(resposta -> ResponseEntity.ok(resposta)).orElse(ResponseEntity.notFound().build());
+			return repository.findById(id).map(resposta -> ResponseEntity.ok(resposta))
+					.orElse(ResponseEntity.notFound().build());
 		}
 		
 		@GetMapping("/nomeCategoria/{nomeCategoria}")

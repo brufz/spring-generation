@@ -24,7 +24,6 @@ public class ProdutoModel {
 	private String nomeJogo;
 	
 	@NotNull
-	@Size(min = 4, max = 4)
 	private int anoJogo;
 	
 	@NotNull
